@@ -175,6 +175,29 @@ const bookRouter = Router();
  *         description: Internal Server Error.
  */
 
+/**
+ * @swagger
+ * /api/v1/book/{id}:
+ *   delete:
+ *     summary: Remove the book by id
+ *     tags:
+ *       - Books
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         schema:
+ *           type: string
+ *         required: true
+ *         description: The book id to delete
+ *     responses:
+ *       200:
+ *         description: Book with given id is deleted successfully.
+ *       404:
+ *         description: Book with given id is not found.
+ *       500:
+ *         description: Internal Server Error
+ */
+
 bookRouter.post("/book/new", createBook);
 bookRouter.get("/books", getBooks);
 bookRouter.get("/book/:id", getBookById);
