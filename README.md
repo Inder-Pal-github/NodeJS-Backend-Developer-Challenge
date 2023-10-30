@@ -1,4 +1,4 @@
-# NodeJS-Backend-Developer-Challenge
+# 🚂🚂NodeJS-Backend-Developer-Challenge🐋🐋
 
 - This is a simple node.js project to create a API which allow use to perform CRUD operations for managinng books.
 
@@ -36,6 +36,15 @@
     - First install nodemon: `npm i nodemon`
     - RUN: `npm run dev`
 
+### Dependencies
+
+- [Express](https://www.npmjs.com/package/express)🚀
+- [Dotenv](https://www.npmjs.com/package/dotenv)🚀
+- [Nodemon](https://www.npmjs.com/package/nodemon)🚀
+- [Mongoose](https://www.npmjs.com/package/mongoose)🚀
+- [Swagger-jsdoc](https://www.npmjs.com/package/swagger-jsdoc)🚀
+- [Swagger-ui-express](https://www.npmjs.com/package/swagger-ui-express)🚀
+
 ### Project deployed link:
 
 [https://red-shiny-raven.cyclic.app/](https://red-shiny-raven.cyclic.app/)
@@ -49,3 +58,6 @@
 
 - - **_Authentication_**
     - Using **jsonwebtoken** and **bcrypt**
+
+
+### Thanks for visiting this repository.🚀
