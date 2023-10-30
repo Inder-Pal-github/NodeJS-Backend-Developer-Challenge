@@ -9,6 +9,8 @@ const {
 
 const bookRouter = Router();
 
+
+// defined schemas
 /**
  * @swagger
  * components:
@@ -36,6 +38,7 @@ const bookRouter = Router();
  *           description: The auto generated updatedAt date of the book.
  */
 
+// defined tags
 /**
  * @swagger
  * tags:
@@ -43,6 +46,7 @@ const bookRouter = Router();
  *   description: All the API routes related to Books.
  */
 
+// swagger docs for get all books
 /**
  * @swagger
  * /api/v1/books:
@@ -78,6 +82,7 @@ const bookRouter = Router();
  *
  */
 
+// swagger docs for getting book by id
 /**
  * @swagger
  * /api/v1/book/{id}:
@@ -104,6 +109,7 @@ const bookRouter = Router();
  *
  */
 
+// swagger docs for adding new book
 /**
  * @swagger
  * /api/v1/book/new:
@@ -135,6 +141,7 @@ const bookRouter = Router();
  *               $ref: "#/components/schemas/Book"
  */
 
+// swagger docs for updating a book
 /**
  * @swagger
  * /api/v1/book/{id}:
@@ -175,6 +182,7 @@ const bookRouter = Router();
  *         description: Internal Server Error.
  */
 
+// swagger docs for delete a book
 /**
  * @swagger
  * /api/v1/book/{id}:
