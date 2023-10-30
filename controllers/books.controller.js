@@ -40,6 +40,10 @@ module.exports = {
       const { id } = req.params;
       const book = await BookModel.findById(id);
 
+      if (!book) {
+        throw new Error("Book not found");
+      }
+
       res.status(200).json({
         success: true,
         message: `Successfully fetched book details with id: ${id}`,
@@ -58,6 +62,10 @@ module.exports = {
         { $set: updates },
         { new: true }
       );
+
+      if (!updatedBook) {
+        throw new Error("Book not found");
+      }
       res.status(200).json({
         success: true,
         message: `Successfully updated book with id: ${id}`,
@@ -71,6 +79,10 @@ module.exports = {
     try {
       const { id } = req.params;
       const deleteBook = await BookModel.findByIdAndDelete(id);
+
+      if (!deleteBook) {
+        throw new Error("Book not found");
+      }
       res.status(200).json({
         success: true,
         message: `Successfully deleted book with id: ${id}`,

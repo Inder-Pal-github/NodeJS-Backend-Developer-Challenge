@@ -135,6 +135,46 @@ const bookRouter = Router();
  *               $ref: "#/components/schemas/Book"
  */
 
+/**
+ * @swagger
+ * /api/v1/book/{id}:
+ *   patch:
+ *     summary: It will update the book details
+ *     tags:
+ *       - Books
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         schema:
+ *           type: string
+ *         required: true
+ *         description: The book id
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               title:
+ *                 type: string
+ *               author:
+ *                 type: string
+ *               summary:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: Book with given id is updated successfully.
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: "#/components/schemas/Book"
+ *       400:
+ *         description: The book was not found.
+ *       500:
+ *         description: Internal Server Error.
+ */
+
 bookRouter.post("/book/new", createBook);
 bookRouter.get("/books", getBooks);
 bookRouter.get("/book/:id", getBookById);
