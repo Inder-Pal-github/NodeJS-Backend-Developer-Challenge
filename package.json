@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-backend-developer-challenge",
+  "version": "1.0.0",
+  "description": "Project to develop a RESTful API using Node.js  for managing books.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Inder-Pal-github/NodeJS-Backend-Developer-Challenge.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Express.js",
+    "Mongoose",
+    "MongoDB",
+    "Backend",
+    "REST",
+    "API"
+  ],
+  "author": "Inder Pal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Inder-Pal-github/NodeJS-Backend-Developer-Challenge/issues"
+  },
+  "homepage": "https://github.com/Inder-Pal-github/NodeJS-Backend-Developer-Challenge#readme"
+}
