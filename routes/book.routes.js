@@ -78,6 +78,31 @@ const bookRouter = Router();
 *
 */
 
+/**
+ * @swagger
+ * /api/v1/book/{id}:
+*   get:
+*       summary: This will get the single book data from the database
+*       tags:
+*           - Books
+*       parameters:
+*           - in: path
+*             name: id
+*             schema:
+*                 type: string
+*             required: true
+*             description: ID of the document to retreive.
+*       responses:
+*           200:
+*               description: The data of book with the given id
+*               content:
+*                   application/json:
+*                       schema:
+*                           type: object
+*                           item:
+*                               $ref: "#/components/schemas/Book"
+*          
+ */
 
 bookRouter.post("/book/new", createBook);
 bookRouter.get("/books", getBooks);

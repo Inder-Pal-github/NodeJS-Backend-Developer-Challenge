@@ -38,6 +38,7 @@ module.exports = {
   getBookById: async (req, res, next) => {
     try {
       const { id } = req.params;
+      console.log(id);
       const book = await BookModel.findById(id);
 
       res.status(200).json({
