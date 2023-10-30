@@ -1,8 +1,7 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
 
-const MONGODB_URL =
-  process.env.MONGODB_ATLAS_URI ||
-  "mongodb://127.0.0.1:27017/backend_developer_challenge";
+const MONGODB_URL = process.env.MONGODB_ATLAS_URI;
 
 const dbConnection = mongoose
   .connect(MONGODB_URL)

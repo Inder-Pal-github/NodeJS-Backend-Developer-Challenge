@@ -21,7 +21,7 @@ module.exports = {
   },
   getBooks: async (req, res, next) => {
     try {
-      const { page = 1, limit = 5, sort = "desc" } = req.query;
+      const { page = 1, limit = 2, sort = "desc" } = req.query;
       const books = await BookModel.find()
         .skip((page - 1) * limit)
         .limit(limit)
